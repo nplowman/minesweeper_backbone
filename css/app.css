@@ -1,0 +1,71 @@
+body {
+  background-color: beige;
+  font-family: serif;
+}
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.minesweeper-app {
+  display: inline-block;
+}
+.minesweeper-controls__inner {
+  width: 100%;
+  background-color: cadetblue;
+  overflow: auto;
+}
+.minesweeper-controls__counter {
+  float: left;
+}
+.minesweeper-controls__timer {
+  float: right;
+}
+.minesweeper-controls__reset-button {
+  font-size: 1.5em;
+  border-radius: 0.6em;
+  padding: 0.4em 0.6em;
+  font-family: monospace;
+  font-weight: bold;
+  background-color: darkslategrey;
+  color: antiquewhite;
+  margin: 0.5em 0;
+}
+.counter {
+  font-size: 2em;
+  padding: 0.4em 0em;
+  color: antiquewhite;
+  font-family: sans-serif;
+  width: 2.2em;
+}
+.grid__grid-row {
+  clear: both;
+  height: 2rem;
+}
+.grid__grid-row__cell {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  background-color: #ccc;
+  height: 2rem;
+  width: 2rem;
+  display: block;
+  float: left;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.grid__grid-row__cell.mine-triggered {
+  background-color: red;
+  background-image: url(img/mine.png);
+  background-size: 100% 100%;
+}
+
+.grid__grid-row__cell.flagged {
+  background-image: url(img/flag.png);
+  background-size: 100% 100%;
+}
+
+.grid__grid-row__cell.empty {
+  background-color: #eeeeee;
+}
